@@ -50,14 +50,5 @@ function register(event) {
             alert(error.message);
         });
 }
-
-// Logout Function
-function logout() {
-    auth.signOut().then(() => {
-        window.location.href = "login.html";
-    }).catch((error) => {
-        console.error('Error during logout:', error.message);
-        alert(error.message);
-    });
 }
 
